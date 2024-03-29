@@ -10,11 +10,13 @@ import os
 
 # Testing 
 
-# logging.info("test log")
-# try:
-#     1/0
-# except Exception as e:
-#     raise AppException(e,sys)
+logging.info("test log")
+try:
+    1/0
+except Exception as e:
+    raise AppException(e,sys)
 
 
-# # read_yaml_file(os.path)
+# read_yaml_file(os.path)
+
+

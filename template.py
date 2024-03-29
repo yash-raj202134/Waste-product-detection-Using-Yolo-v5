@@ -8,6 +8,7 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 project_name = "WasteProductDetection"
 
 list_of_files = [
+
     ".github/workflows/.gitkeep",
     "data/.gitkeep",
     f"{project_name}/__init__.py",
@@ -32,6 +33,8 @@ list_of_files = [
     "Dockerfile",
     "requirements.txt",
     "setup.py",
+    
+
 ]
 
 
@@ -53,3 +56,4 @@ for filepath in list_of_files:
     
     else:
         logging.info(f"{filename} is already created")
+
