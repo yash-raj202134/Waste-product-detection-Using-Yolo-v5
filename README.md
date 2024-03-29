@@ -17,7 +17,7 @@ Object Detection Project Implementation Using YOLOv5.....
 Clone the repository
 
 ```bash
-https://github.com/entbappy/End-to-end-waste-detection
+git clone https://github.com/yash-raj202134/Waste-product-detection-Using-Yolo-v5.git
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
