@@ -37,7 +37,7 @@ def predictRoute():
 
         os.system("cd yolov5/ && python detect.py --weights best.pt --img 416 --conf 0.5 --source ../data/inputImage.jpg")
 
-        opencodedbase64 = encodeImageIntoBase64("yolov5/runs/detect/exp/inputImage.jpg")
+        opencodedbase64 = encodeImageIntoBase64("data/inputImage.jpg")
         result = {"image": opencodedbase64.decode('utf-8')}
         os.system("rm -rf yolov5/runs")
 
