@@ -1,5 +1,5 @@
 import sys,os
-from WasteProductDetection.pipeline.training_pipeline import TrainPipeline
+from WasteProductDetection.pipeline.training_pipeline import TrainingPipeline
 from WasteProductDetection.utils.main_utils import decodeImage, encodeImageIntoBase64
 from flask import Flask, request, jsonify, render_template,Response
 from flask_cors import CORS, cross_origin
@@ -17,7 +17,7 @@ class ClientApp:
 
 @app.route("/train")
 def trainRoute():
-    obj = TrainPipeline()
+    obj = TrainingPipeline()
     obj.run_pipeline()
     return "Training Successfull!!" 
 
